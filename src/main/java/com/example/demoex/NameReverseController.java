@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/v1")
 public class NameReverseController {
-    @GetMapping("/reverse/{name}")
-    public String returnName(@PathVariable String name){
+    @GetMapping("/name")
+    public String returnName(@RequestParam String name){
         return name;
     }
 
